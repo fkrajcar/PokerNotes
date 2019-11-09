@@ -1,7 +1,6 @@
 <?php
-    // Initialize the session
-    session_start();
-    require 'config.php';
+session_start();
+require 'config.php';
 ?>
 
 <html>
@@ -10,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <title>About</title>
-    <?php include 'header.php' ?>
+    <?php include 'header.php'; ?>
 </head>
 <body>
     <?php include 'navbar.php'; ?>

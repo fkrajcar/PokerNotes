@@ -2,9 +2,7 @@
 require 'config.php';
 
 session_start();
-if(isset($_SESSION["username"]))
-{
-?>
+if (isset($_SESSION["username"])) { ?>
   <html>
   <head>
   <title>Data input</title>
@@ -47,13 +45,8 @@ if(isset($_SESSION["username"]))
         </form>
 </div>
         
-<?php }
-else 
-{
-  echo 'Please log in first.<br>';
-  sleep(2);
-  header('Location: home.php');
-}
-
+<?php } else {echo 'Please log in first.<br>';
+    sleep(2);
+    header('Location: home.php');}
 ?>
 </html>
